@@ -1,9 +1,4 @@
-body {
-	width: 760px;
-	margin:40px auto;
-	font: Helvetica;
-}
-
-div {
-	background-color: yellow; 
+img{
+	display:block;
+	margin:0 auto;
 }
