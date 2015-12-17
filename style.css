@@ -6,7 +6,11 @@ img{
    	margin-bottom:40px; /*to have the space under the image*/
 }
 
-h1{
+h1,h2{
 	text-align: center;
 }
 
+p{
+	padding-left: 40px;
+	padding-right: 40px;
+}
