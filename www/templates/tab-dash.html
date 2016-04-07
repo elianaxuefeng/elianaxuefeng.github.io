@@ -1,28 +1,26 @@
 <ion-view view-title="Mild" >
-  
-  <ion-content class="padding" ng-controller="CardsCtrl" class="slide-left-right-ios7">
+  <ion-pane class="slide-left-right-ios7" no-scroll>
+        <ion-content class="padding" ng-controller="CardsCtrl">
  
      <swipe-cards on-card-swipe="onSwipe($event)">
-    
             <swipe-card on-card-swipe="cardSwiped()" id="start-card">
-              Swipe down for a new question card
+                  <span class="titleCardText">
+                        Swipe down for a new question card
+                  </span>
             </swipe-card>
      
         
             <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
-
-           
-                
-                  <h2>{{card.question}}</h2>
-                        
-              
-
+                  <div>
+                        {{card.question}}
+                  </div>
             </swipe-card>
-
       </swipe-cards>
 
      
 
  </ion-content>
+        </ion-pane>
+  
 
 </ion-view>
