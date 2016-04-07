@@ -1,0 +1,106 @@
+<ion-view view-title="Medium">
+  
+    <ion-content class="padding">
+    
+    <div class="animated bounceInUp" ng-controller="flipCtrl" >
+       <!--card container -->
+      <div class="card-container" ng-repeat="item in mediumquestions">   
+      
+           <!--card-->      
+            <div class="card" ng-click="backShown=!backShown; onclick();" ng-class="{'flipped':backShown}">
+                   <!--card front content-->         
+                    <div class="front" ng-show="!backShown">  
+                        <h2>{{item.question}}</h2>
+                    </div>    
+                    <!--closing card front content-->
+                    <!--card back content-->
+                    <div class="back" ng-show="backShown" >
+                         <div class="row">
+                            <div class="col col-50">
+                               <h4>{{item.answer1}}</h4>
+                            </div>
+                            <div class="col col-50">
+                               <h4>{{item.answer2}}</h4>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col col-50">
+                               <h4>{{item.answer3}}</h4>
+                            </div>
+                            <div class="col col-50">
+                               <h4>{{item.answer4}}</h4>
+                            </div>
+                         </div>               
+                    </div>
+                  <!--closing card back content-->
+            </div>
+            <!--closing card-->
+       </div>
+         <!--closing card container -->
+    </div>
+    <!--closing controller and overall animation -->
+
+    <div class="animated bounceInUp" ng-controller="flipCtrl">
+          <!--card container-->
+          <div class="card-container" ng-repeat="item in mediumquestionsthree">   
+           <!--card-->      
+            <div class="card" ng-click="backShownMediumThree=!backShownMediumThree; onclick();" ng-class="{'flipped':backShownMediumThree}">
+                   <!--card front content-->         
+                    <div class="front" ng-show="!backShownMediumThree">  
+                        <h2>{{item.question}}</h2>
+                    </div>    
+                    <!--closing card front content-->
+                    <!--card back content-->
+                    <div class="back" ng-show="backShownMediumThree" >
+                         <div class="row">
+                            <div class="col col-33">
+                               <h4>{{item.answer1}}</h4>
+                            </div>
+                            <div class="col col-33">
+                               <h4>{{item.answer2}}</h4>
+                            </div>
+                            <div class="col col-33">
+                               <h4>{{item.answer3}}</h4>
+                            </div>
+                         </div>            
+                    </div>
+                  <!--closing card back content-->
+            </div>
+            <!--closing card-->
+       </div>
+         <!--closing card container -->
+    </div>
+    <!--closing controller and overall animation -->
+
+     <div class="animated bounceInUp" ng-controller="flipCtrl">
+          <!--card container-->
+          <div class="card-container" ng-repeat="item in mediumquestionstwo">   
+           <!--card-->      
+            <div class="card" ng-click="backShownMediumTwo=!backShownMediumTwo; onclick();" ng-class="{'flipped':backShownMediumTwo}">
+                   <!--card front content-->         
+                    <div class="front" ng-show="!backShownMediumTwo">  
+                        <h2>{{item.question}}</h2>
+                    </div>    
+                    <!--closing card front content-->
+                    <!--card back content-->
+                    <div class="back" ng-show="backShownMediumTwo" >
+                         <div class="row">
+                            <div class="col col-50">
+                               <h4>{{item.answer1}}</h4>
+                            </div>
+                            <div class="col col-50">
+                               <h4>{{item.answer2}}</h4>
+                            </div>
+                         </div>            
+                    </div>
+                  <!--closing card back content-->
+            </div>
+            <!--closing card-->
+       </div>
+         <!--closing card container -->
+    </div>
+    <!--closing controller and overall animation -->
+
+ 
+  </ion-content>
+</ion-view>

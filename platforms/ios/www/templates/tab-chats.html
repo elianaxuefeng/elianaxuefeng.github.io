@@ -1,0 +1,22 @@
+<ion-view view-title="Medium">
+  
+    <ion-content class="padding">
+    
+    <div class="animated bounceInUp" ng-controller="flipCtrl">
+
+        <div class="card-container"> 
+            <div class="card" ng-class="{'flipped':isFlipped}" ng-click="isFlipped=!isFlipped" ng-repeat="mildquestion in mildquestions"> 
+                <div class="face front"> 
+                    {{mildquestion.question}}
+                </div> 
+                <div class="face back"> 
+                    hi
+                </div> 
+            </div> 
+        </div> 
+
+   </div>
+
+ 
+  </ion-content>
+</ion-view>
