@@ -120,9 +120,9 @@ start-card .swipe-card{
   }
 }
 
-.swipe-card.pop-in-start {
+swipe-card.pop-in-start,.swipe-card.pop-in-start {
   -webkit-transform: scale(0,0);
 }
-.swipe-card.pop-in {
+swipe-card.pop-in,.swipe-card.pop-in {
   -webkit-animation: bounceIn 0.3s ease-out;
 }
